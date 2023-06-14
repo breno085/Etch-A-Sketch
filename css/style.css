@@ -1,7 +1,17 @@
+* {
+    background-color: black
+}
+
+.grid {
+    border: 40px solid rgb(255, 246, 122);
+    width: 560px;
+    border-radius: 60px;
+}
+
 .square{
-    background-color: lightblue;
-    height: 30px;
-    width: 30px;
+    background-color: whitesmoke;
+    height: 35px;
+    width: 35px;
     box-shadow: 0 0 0.5px black;
 }
 
