@@ -1,11 +1,21 @@
+* {
+    background-color: lightgoldenrodyellow;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    text-align: center;
+}
 
 .grid {
-    border: 40px solid rgb(245, 245, 127);
+    border: 60px solid rgb(245, 245, 127);
     width: 560px;
-    border-radius: 60px;
+    border-radius: 50px;
 }
 
 .square{
+    background-color: whitesmoke;
     height: 35px;
     width: 35px;
     box-shadow: 0 0 0.5px black;
@@ -13,4 +23,15 @@
 
 .row {
     display: flex;
+}
+
+.fullPage {
+    display: flex;
+    justify-content: center;
+}
+
+#gridsize {
+    display: flex;
+    align-self: flex-start;
+    margin: 50px;
 }
