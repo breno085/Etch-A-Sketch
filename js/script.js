@@ -4,17 +4,18 @@ const clearButton = document.querySelector('#clear');
 const rainbow = document.querySelector('#rainbow');
 const black = document.querySelector('#black');
 const eraser = document.querySelector('#eraser');
+//const darkening = document.querySelector('#darkening');
 
 let size = 16;
 let color;
 
-//using a boolean flag to control the behavior of event listeners based on certain conditions or actions,
-//in this case, 3 events when the user uses the mouse: mousedown, mouseup and mousemove, 
-//altering the squares colors based on this 3 conditions
+/*using a boolean flag to control the behavior of event listeners based on certain conditions or actions,
+in this case, 3 events when the user uses the mouse: mousedown, mouseup and mousemove, 
+altering the squares colors based on this 3 conditions */
 let isMouseDown = false;
 
-//using a boolean flag again to control the behavior of the default event (black pen) overwriting the rainbow event (rainbow pen),
-//meaning that the squares was still staying black even when the rainbow button was clicked
+/*using a boolean flag again to control the behavior of the default event (black pen) overwriting the rainbow event (rainbow pen),
+meaning that the squares was still staying black even when the rainbow button was clicked */
 let isRainbowEnabled = false;
 
 gridButton.addEventListener('click', () => {
@@ -37,6 +38,14 @@ rainbow.addEventListener('click', () => {
     });
     
 });
+
+/*darkening.addEventListener('click', () => {
+    isDarkeningEnabled = true;
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => {
+      
+    });
+  }); */
 
 eraser.addEventListener('click', () => {
     const squares = document.querySelectorAll('.square');
@@ -72,7 +81,7 @@ function squareSize(size){
 }
 
 function gridSize(){
-    let sizeNum = prompt('Choose the number of squares', '');
+    let sizeNum = prompt('Choose the number of squares, between 1 to 100', '');
     if (sizeNum !== null && sizeNum > 0 && sizeNum < 101) {
     container.innerHTML = '';
     size = sizeNum;
@@ -80,7 +89,7 @@ function gridSize(){
     squareNumber(size);
     squareSize(size);
     } else {
-        alert('Choose a valid size between 1 and 100');
+        alert('Choose a valid size between 1 to 100');
     }
 }
 
@@ -114,3 +123,8 @@ function backcolorChange(square, color){
             }
         });
     }
+
+/*function darkeningSquare (){
+
+} */
+

@@ -32,6 +32,7 @@
 button {
     display: flex;
     margin: 10px;
+    font-size: medium;
 }
 
 .buttons {
