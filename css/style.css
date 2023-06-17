@@ -11,13 +11,12 @@
 .grid {
     border: 60px solid rgb(245, 245, 127);
     width: 560px;
+    height: 560px;
     border-radius: 50px;
 }
 
 .square{
     background-color: whitesmoke;
-    height: 35px;
-    width: 35px;
     box-shadow: 0 0 0.5px black;
 }
 
