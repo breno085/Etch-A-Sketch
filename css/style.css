@@ -1,13 +1,18 @@
+/* Reset de estilo para todos os elementos */
 * {
     background-color: lightgoldenrodyellow;
+    box-sizing: border-box;
 }
 
+/* Título */
 .title {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 65px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Estilo para a grid */
 .grid {
     border: 60px solid rgb(245, 245, 127);
     width: 560px;
@@ -15,30 +20,63 @@
     border-radius: 50px;
 }
 
+/* Estilo das quadrículas */
 .square{
     background-color: whitesmoke;
     box-shadow: 0 0 0.5px black;
 }
 
+/* Estilo das linhas na grid */
 .row {
     display: flex;
 }
 
+/* Estilo da página principal */
 .fullPage {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-button {
-    display: flex;
-    margin: 10px;
-    font-size: medium;
-}
-
+/* Contêiner dos botões */
 .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
-    display: flex;
     margin: 25px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: medium;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito ao passar o mouse sobre os botões */
+button:hover {
+    background-color: #ff9900;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    background-color: #e68a00;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Foco do botão */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 153, 51, 0.5);
 }
